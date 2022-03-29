@@ -12,7 +12,7 @@ public class ReadCSV : MonoBehaviour
 
     void ReadCSVFile()
     {
-        StreamReader strReader = ne StreamReader(""); //need to add file location
+        StreamReader strReader = new StreamReader(""); //need to add file location
         bool endOfFile = false;
         while(!endOfFile){
             string data_String = trReader.ReadLine();
@@ -21,7 +21,7 @@ public class ReadCSV : MonoBehaviour
                 break;
             }
             var data_values = data_String.Split(',');
-            Debug.Log(data_values[0].ToString() + " " + data_values[1].ToString() + " " + data_values[2].ToString() + " " + data_values[3].ToString())
+            Debug.Log(data_values[0].ToString() + " " + data_values[1].ToString() + " " + data_values[2].ToString() + " " + data_values[3].ToString());
         }
     }
 }
